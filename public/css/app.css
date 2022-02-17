@@ -10962,3 +10962,9 @@ a.text-dark:focus {
   }
 }
 
+#app {
+  text-align: center;
+  background-color: aqua;
+  color: black;
+}
+

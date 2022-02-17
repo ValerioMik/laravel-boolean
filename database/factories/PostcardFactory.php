@@ -2,11 +2,14 @@
 
 /** @var \Illuminate\Database\Eloquent\Factory $factory */
 
-use App\Model;
+use App\Postcard;
 use Faker\Generator as Faker;
 
-$factory->define(Model::class, function (Faker $faker) {
+$factory->define(Postcard::class, function (Faker $faker) {
     return [
-        //
+        'sender' => $faker ->name(),
+        'addres' => $faker ->address(),
+        'text' => $faker ->sentence(),
+        'image' => null,
     ];
 });

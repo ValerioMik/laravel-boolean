@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Postcard;
 
 class PostcardSeeder extends Seeder
 {
@@ -11,6 +12,6 @@ class PostcardSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Postcard::class,20)->create();
     }
 }

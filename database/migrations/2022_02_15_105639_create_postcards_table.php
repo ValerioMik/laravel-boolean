@@ -16,11 +16,10 @@ class CreatePostcardsTable extends Migration
         Schema::create('postcards', function (Blueprint $table) {
             $table->id();
 
-            $table->string('sender');
+            $table->string('sender',60);
             $table->string('addres');
-            $table->string('text');
-            $table->string('image');
-
+            $table->text('text')->nullable();
+            $table->string('image')->nullable();
 
 
             $table->timestamps();
